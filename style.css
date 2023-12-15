@@ -1,12 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Noto+Sans:wght@200&display=swap');
 
+/* HEADER */
 *{
     font-family: 'Noto Sans', sans-serif;
     font-size: 15px;
 }
 body {
     margin: 0;
-    background-color: black;
+    background-color: #222;
     
 }
 
@@ -16,7 +17,7 @@ nav {
     align-items: center;
     background-color: black;
     width: 100%;
-    height: 60px;
+
     border-bottom: 1px solid #44D62C;
 }
 
@@ -33,7 +34,8 @@ nav {
 }
 
 #navMenu{
-    /* max-width: 1200px; */
+    box-sizing: border-box;
+    max-width: 1200px;
     display: flex;
     justify-content: space-between;
 
@@ -72,7 +74,6 @@ li{
 }
 
 #cartIcon {
-
     height: 20px;
     vertical-align: middle;
 }
@@ -114,19 +115,460 @@ li{
     text-decoration: underline;
 }
 
-@media(max-width: 1053px) {
-    #navMenu{
-        max-width: 1200px;
-        display: flex;
 
-    #navList {
-        display:none;
+/* IMAGE DIV */
+#fullImagesContainer {
+    box-sizing: border-box;
+}
+
+.imageDiv {
+    box-sizing: border-box;
+    height: 5px;
+    flex-wrap: wrap;
+    display: flex;
+    background-color: #222;
+    width: 100%;
+}
+
+/* PICTURES */
+#pictureHoliday {
+    margin-bottom: 0;
+    width: 100%;
+}
+#pictureHeaders {
+    width: 100%;
+}
+#pictureLambo {
+    width: 100%;
+}
+
+/* PICTURES LIST */
+
+#listPicturesContainer {
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    border: none;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+/* ----- 1 -----*/
+
+.listPictures1{
+    box-sizing: border-box;
+    display: flex;
+    width: 100%;
+    
+
+}
+
+#chair {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width:50%;
+    padding-right: 5px;
+    
+
+
+}
+#chairImage {
+    display: flex;    
+    flex-wrap: wrap;
+    width: 100%;
+}
+/* content */
+
+.content{
+    display: flex;
+    box-sizing: border-box;
+    justify-content: center;
+    position: relative;
+  
+}
+
+#razen{
+    color: white;
+    position: absolute;
+    margin-top: 5%;
+    font-size: 2.5rem;
+}
+
+#play{
+    color: white;
+    position: absolute;
+    margin-top: 12%;
+    font-size: 1.3rem;
+}
+
+
+/* ------------------------------ */
+#laptops{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width:50%;
+}
+#laptopsImage {
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+
+
+
+/* ----- 2 -----*/
+
+.listPictures2{
+    display: flex;
+    width: 100%;
+}
+#games {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width:50%;
+    padding-right: 5px;
+}
+#gamesImage {
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+#keyboard{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width:50%;
+}
+#keyboardImage {
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+
+/* ----- 3 -----*/
+
+.listPictures3{
+    display: flex;
+    width: 100%;
+}
+
+#animes{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width:50%;
+    padding-right: 5px;
+}
+#animesImage {
+    flex-wrap: wrap;
+    width: 100%;
+}
+#cards{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width:50%;
+}
+#cardsImage {
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+
+
+
+/* ----------FOOTER top---------- */
+
+
+#full {
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    margin-top: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;    
+    background-color: black;
+    box-sizing: border-box;    
+    border: 1px solid red;
+    height: 100%;
+    width: 100%;
+   
+}
+
+
+footer {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    box-sizing: border-box;
+    border: 1px solid #44D62C;
+    width: 75%;
+    height: fit-content;
+    border-bottom: 1px solid white
+
+}
+
+.listContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: fit-content;
+    box-sizing: border-box;
+    border: 1px solid red;
+    display: block;
+}
+
+ul{
+    color: white;
+    list-style: none;
+
+}
+
+.listTitle{
+    font-size: 15px;
+    color:white;
+    text-decoration:double;
+}
+
+li {
+    font-size: 5px;
+    color: gray;
+    margin: 10px;
+}
+
+
+.mediaImage {
+    height: 1.75rem;
+    width: 1.75rem;
+}
+
+
+#footerh3{
+   font-size: 15px;
+   color: #44D62C;
+
+
+}
+
+/* ----------FOOTER botom---------- */
+
+#bottomListContainer{
+    display: flex;
+    align-content: flex-start;
+    flex-direction: row;
+    box-sizing: border-box;
+    border: 1px solid #44D62C;
+    align-content: end;
+    width: 75%;
+    height: fit-content;
+    border-bottom: 1px solid white
+
+}
+
+#botomListContainerleft{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#bo
+
+#botomListContainerright {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.botomAtext {
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+#botomListTop {
+    margin-top: 5px;
+    display: flex;
+    align-content: flex-start;
+    flex-direction: row;
+}
+
+#botomListbotom {
+    margin-top: 5px;
+    display: flex;
+    align-content: flex-end;
+    flex-direction: row;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* MEDIA */
+@media(max-width: 1053px) {
+
+
+.listItem{
+        display: none;
     }
 
     #hamburger{
         display: block;
     }
-    }}
+    #navMenu {
+        display: flex;
+        justify-content: space-between;
+    }
+    #navList {
+        width: 30px;
+    }
+
+/* PICTURES LIST */
+
+    /* ----- 1 -----*/
+
+    .listPictures1{
+        display: block;
+        width: 100%;
+ 
+    }
+
+    #chair {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width:100%;
+        padding-bottom: 5px;
+        
+    
+    
+    }
+    #chairImage {
+        display: flex;    
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    /* content */
+    
+    .content{
+        display: flex;
+        box-sizing: border-box;
+        justify-content: center;
+        position: relative;
+      
+    }
+    
+    #razen{
+        color: white;
+        position: absolute;
+        margin-top: 5%;
+        font-size: 2.5rem;
+    }
+    
+    #play{
+        color: white;
+        position: absolute;
+        margin-top: 12%;
+        font-size: 1.3rem;
+    }
+    
+    #laptops{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width:100%;
+    }
+    #laptopsImage {
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    /* ----- 2 -----*/
+
+    .listPictures2{
+        display: block;
+        width: 100%;
+    }
+    #games {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width:100%;
+        padding-bottom: 5px;
+    }
+    #gamesImage {
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    #keyboard{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width:100%;
+    }
+    #keyboardImage {
+        flex-wrap: wrap;
+        width: 100%;
+    }
 
 
+    /* ----- 3 -----*/
+
+    .listPictures3{
+        display: block;
+        width: 100%;
+    }
+
+    #animes{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width:100%;
+        padding-bottom: 5px;
+    }
+    #animesImage {
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    #cards{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width:100%;
+    }
+    #cardsImage {
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+
+
+
+
+
+
+
+
+}
 
