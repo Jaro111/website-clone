@@ -824,12 +824,14 @@ font-size: 0.7rem;
     #cont2{
         color: white;
         position: absolute;
+        margin-top: 14%;
         font-size: 1rem;
     }
     
     #cont2A{
         position: absolute;
         color: white;
+        margin-top: 16%;
         font-weight:900;  
         font-size: 1rem;
     }
@@ -844,14 +846,14 @@ font-size: 0.7rem;
     }
     .listPicturesLinks {
         position: absolute;
-        margin-top: 16%;
+        margin-top: 18%;
         display: flex;
         flex-direction: row;   
     }
     
     #listPicturesLinksA{
         position: absolute;
-        margin-top: 24%;
+        margin-top: 20%;
         display: flex;
         flex-direction: row;       
     }
