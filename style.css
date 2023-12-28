@@ -7,37 +7,47 @@
 }
 body {
     margin: 0;
+    padding: 0;
     background-color: #222;
+    width: 100vw;
+    overflow-x: hidden;
     
 }
 
 nav {
     box-sizing: border-box;
     display: flex;
+    justify-content: center;
     align-items: center;
     background-color: black;
     width: 100%;
+    height: 60px;
 
     border-bottom: 1px solid #44D62C;
 }
 
 #navHeader{
     margin: auto;
+    height: 60px;
     box-sizing: border-box;
-    flex-wrap: wrap;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: black;    
+    background-color: black;  
+    border-bottom: 1px solid #44D62C;  
     
   
 }
 
 #navMenu{
     box-sizing: border-box;
+    align-content: center;
+    align-items: center;
     max-width: 1200px;
+    height: 60px;
     display: flex;
     justify-content: space-between;
+
 
 
 }
@@ -46,6 +56,7 @@ nav {
     box-sizing: border-box;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     width: 1000px;
     display: flex;
 }
@@ -55,17 +66,21 @@ nav {
     display: flex;
     text-decoration: none;
     color: lightgrey;
-    
+}
+
+#navMenu a:hover{
+    color: white;
 }
 
 li{
     padding-right: 4px;
 }
 
+
 #navLogo {
     width: 35px;
-    vertical-align: middle;
     border-style: none;
+    padding-right: 55px;;
 }
 
 #searchIcon {
@@ -76,6 +91,7 @@ li{
 #cartIcon {
     height: 20px;
     vertical-align: middle;
+    padding-left: 55px;
 }
 
 #hamburger {
@@ -86,8 +102,8 @@ li{
     justify-content: left;
     background-color: white;
     height: 1px;
-    width: 20px;
-    margin: 3px 0;
+    width: 30px;
+    margin: 10px 0;
 }
 
 #notificationBar {
@@ -97,16 +113,18 @@ li{
     margin: auto;
     text-align: center;
     border: 0;
-    background-color: gray;
+    background-color: #555;
     min-height: 44px;
     padding: 0;
 }
 #notificatonText{
+    font-size: 15px;
     flex-wrap: wrap;
     color: white;
 }
 
 #notificationList {
+    font-size: 15px;
     color: white;
     text-decoration: none;
 }
@@ -115,10 +133,12 @@ li{
     text-decoration: underline;
 }
 
+/* ------------- FULL WIDTH IMAGES ------------- */
 
 /* IMAGE DIV */
 #fullImagesContainer {
     box-sizing: border-box;
+    display: block;
 }
 
 .imageDiv {
@@ -131,18 +151,107 @@ li{
 }
 
 /* PICTURES */
-#pictureHoliday {
+.fullPicCotainer1{
+    padding: 0;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+.fullPicCotainer2{
+    padding: 0;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+.fullPicCotainer3{
+    padding: 0;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+
+.fullLinks{
+    box-sizing: border-box;
+    padding: 0;
+
+}
+.fullCont{
+    position: relative;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    box-sizing: border-box; 
+    padding-bottom: 0;
+}
+
+#fullCont1{
+    font-size: 3.5rem;
+    margin-top: 2%;
+    color: white;
+    position: absolute;
+    flex-wrap: wrap;
+}
+#fullCont2 {
+    font-size: 1.6rem;
+    margin-top: 6%;
+    color: white;
+    position: absolute;
+    flex-wrap: wrap;
+}
+.fullListPicturesLinks{
+    position: absolute;
+    margin-top: 8%;
+}
+
+.fullLinksContent {
+    font-size: 1.3rem;
+    text-decoration: none;
+    color: white;
+}
+
+
+
+.fullLinksContentA{
+font-size: 1.3rem;
+font-weight: 900;
+    text-decoration: none;
+    color: black;
+    font-weight: 900;
+}
+
+.fullarrow {
+    color: #44d62c;
+    font-weight:900;
+    font-size: 0.8rem;  
+}
+
+
+
+.fullLinksContent:hover{
+    text-decoration: underline;
+}
+.fullLinksContentA:hover{
+        text-decoration: underline;
+
+}
+.fullarrow:hover{
+    text-decoration: none;
+}
+
+#fullImage {
     margin-bottom: 0;
-    width: 100%;
-}
-#pictureHeaders {
-    width: 100%;
-}
-#pictureLambo {
+    display: flex;
+    flex-wrap: wrap;
     width: 100%;
 }
 
-/* PICTURES LIST */
+
+
+
+/* /* ------------- PICTURES LIST ------------- */
 
 #listPicturesContainer {
     box-sizing: border-box;
@@ -160,98 +269,145 @@ li{
     box-sizing: border-box;
     display: flex;
     width: 100%;
-    
-
 }
 
-#chair {
+#ces {
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
-    box-sizing: border-box;
-    width:50%;
+    width: 50%;
     padding-right: 5px;
     
 
-
 }
-#chairImage {
-    display: flex;    
+#listImage {
+    display: flex;  
     flex-wrap: wrap;
     width: 100%;
+    padding-bottom: 0;
 }
+
+/* -------------------------------------------------------- */
 /* content */
 
 .content{
-    display: flex;
-    box-sizing: border-box;
-    justify-content: center;
     position: relative;
-  
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    box-sizing: border-box; 
+    padding-bottom: 0;
 }
 
-#razen{
-    color: white;
+#cont1 {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    align-items: center;
     position: absolute;
-    margin-top: 5%;
+    color: white;
+    margin-top: 3%;
+    font-weight: 900;
     font-size: 2.5rem;
+    margin-bottom: 0;
 }
 
-#play{
+.block {
+    display: block;
+    flex-direction: column;
     color: white;
+    font-weight: 900;
+    font-size: 2.2rem;
+    
+}
+
+#cont2{
     position: absolute;
-    margin-top: 12%;
+    color: white;
+    font-weight:900;  
+    margin-top: 9%;
     font-size: 1.3rem;
+}
+#cont2A{
+    position: absolute;
+    color: white;
+    font-weight:900;  
+    margin-top: 18%;
+    font-size: 1.3rem;
+}
+/* -------------------------------------------------------- */
+
+/* List picture links */
+
+.listPicturesLinks {
+    position: absolute;
+    margin-top: 15%;
+    display: flex;
+    flex-direction: row;   
+}
+
+#listPicturesLinksA{
+    position: absolute;
+    margin-top: 24%;
+    display: flex;
+    flex-direction: row;       
+}
+
+
+.linksContent {
+    color: white;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-weight:900;
+    font-size: 0.8rem;  
+}
+.arrow {
+    text-decoration: none;
+    color: #44d62c;
+    font-weight:900;
+    font-size: 0.8rem;  
+}
+
+#arrowLink{
+    text-decoration: none;
+}
+.linksContent:hover{
+    text-decoration: underline;
+}
+.arrow:hover{
+    text-decoration: none
 }
 
 
 /* ------------------------------ */
 #laptops{
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
-    box-sizing: border-box;
-    width:50%;
+    width: 50%;
+    padding-right: 0;
+    
 }
-#laptopsImage {
-    flex-wrap: wrap;
-    width: 100%;
-}
-
-
-
 
 /* ----- 2 -----*/
 
 .listPictures2{
-    display: flex;
-    width: 100%;
-}
-#games {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
     box-sizing: border-box;
-    width:50%;
-    padding-right: 5px;
-}
-#gamesImage {
-    flex-wrap: wrap;
+    display: flex;
     width: 100%;
+}
+#chair {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    padding-right: 5px;
 }
 
 #keyboard{
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
     box-sizing: border-box;
     width:50%;
+    padding-right: 0;
 }
-#keyboardImage {
-    flex-wrap: wrap;
-    width: 100%;
-}
-
 
 /* ----- 3 -----*/
 
@@ -260,28 +416,19 @@ li{
     width: 100%;
 }
 
-#animes{
+#five{
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
-    box-sizing: border-box;
-    width:50%;
+    width: 50%;
     padding-right: 5px;
 }
-#animesImage {
-    flex-wrap: wrap;
-    width: 100%;
-}
+
 #cards{
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
     box-sizing: border-box;
     width:50%;
-}
-#cardsImage {
-    flex-wrap: wrap;
-    width: 100%;
+    padding-right: 0;
 }
 
 
@@ -299,7 +446,6 @@ li{
     flex-direction: column;    
     background-color: black;
     box-sizing: border-box;    
-    border: 1px solid red;
     height: 100%;
     width: 100%;
    
@@ -312,39 +458,38 @@ footer {
     flex-direction: row;
     justify-content: space-between;
     box-sizing: border-box;
-    border: 1px solid #44D62C;
     width: 75%;
     height: fit-content;
-    border-bottom: 1px solid white
+    border-bottom: 1px solid gray
 
 }
 
 .listContainer {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     flex-wrap: wrap;
     height: fit-content;
     box-sizing: border-box;
-    border: 1px solid red;
     display: block;
 }
 
 ul{
     color: white;
     list-style: none;
+    padding-left: 0;
 
 }
 
 .listTitle{
     font-size: 15px;
     color:white;
+    font-weight:900;
     text-decoration:double;
 }
 
-li {
-    font-size: 5px;
-    color: gray;
-    margin: 10px;
+li{
+    color: grey;
 }
 
 
@@ -364,15 +509,12 @@ li {
 /* ----------FOOTER botom---------- */
 
 #bottomListContainer{
+    width:75%;
     display: flex;
-    align-content: flex-start;
     flex-direction: row;
     box-sizing: border-box;
-    border: 1px solid #44D62C;
-    align-content: end;
-    width: 75%;
     height: fit-content;
-    border-bottom: 1px solid white
+    justify-content: space-between;
 
 }
 
@@ -380,41 +522,52 @@ li {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    width: fit-content;
 }
 
 #bo
 
-#botomListContainerright {
+#botomListContainerright{
     display: flex;
     flex-wrap: wrap;
+    width: fit-content;
+    justify-content: right;
 }
 
 .botomAtext {
-    margin-top: 10px;
+    margin-top: 3px;
+    font-size: 12px;
+    color: lightgray;
+}
+
+.botomContent{
+    margin-top: 3px;
+    color: lightgray;
     font-size: 12px;
 }
 
+#botomAtext1{
+    margin-top: 3px;
+    font-size: 12px;
+    color: white;
+}
+
+
 #botomListTop {
-    margin-top: 5px;
     display: flex;
-    align-content: flex-start;
     flex-direction: row;
 }
 
 #botomListbotom {
-    margin-top: 5px;
     display: flex;
-    align-content: flex-end;
     flex-direction: row;
 }
 
 
 
-
-
-
-
-
+#mediaFooter{
+    display:none;
+}
 
 
 
@@ -425,17 +578,205 @@ li {
 .listItem{
         display: none;
     }
+.listItemSearch{
+    display: none;
+}
+
+    nav {
+        display: flex;
+ 
+    }
+/* Dropdown section */
+   
+    #hContainer{
+        position: relative;
+    }
 
     #hamburger{
         display: block;
     }
-    #navMenu {
+
+    #navListH {
+        left: 2000px;
+        width: 100vw;
+        z-index: 9999;
+        position: absolute;
+        background-color: #222;
         display: flex;
-        justify-content: space-between;
+        flex-direction: column;
+        align-content: space-around;
+        opacity: 0;
+        transition: all ease;
+        padding-bottom: 20%;
+    }
+
+    .listItemH {
+        border-bottom: 1px solid lightgray ;
+        margin-left: 20px;
+        margin-right: 50px;
+        padding-bottom: 5px;
+        padding-top: 10px;
+    }
+    
+    
+
+
+
+    #hMenu{
+        font-size: 1.2rem;
+        color: lightgray;
+        text-decoration: none;
+    
+    }
+    #hMenu:hover{
+        color: white;
+
+    }
+    #hContainer:active #navListH {
+        display: block;
+        visibility: visible;
+        pointer-events: auto;
+        z-index: 9999;
+        opacity: 1;
+        top: 0;
+        left: 0;
+        
+    }
+    #navListH:hover {
+        display: block;
+        visibility: visible;
+        pointer-events: auto;
+        z-index: 9999;
+        opacity: 1;
+        top: 0;
+        left: 0;
+        
+    }
+
+    #notificatonText{
+        font-size: 11px;
+        
+    }
+    
+    #notificationList {
+        font-size: 11px;
+   
+    }
+   
+/* ----------------------------------------- */
+    #navHeader{
+        height: 60px;
+        box-sizing: border-box;
+        display: flex;
+        width: 50%;
+        margin-right: 20px;
+    }
+    
+    #navMenu{
+        box-sizing: border-box;
+        align-items: center;
+        max-width: 1200px;
+        height: 60px;
+        display: flex;
+        width: 100%;
+    
     }
     #navList {
         width: 30px;
+        display: flex;
+        justify-content: right;      
     }
+
+    #navLogo {
+        width: 35px;
+        border-style: none;
+        margin-left: 10px;
+
+    }
+    
+    #searchIcon {
+        height: 20px;
+        vertical-align: middle;
+    }
+
+    #cartIcon {
+        padding-right: 10px;
+    }
+
+
+
+/* FULL PICTURES */
+
+
+#fullCont1{
+    font-size: 1.5rem;
+    margin-top: 1%;
+    color: white;
+    flex-wrap: wrap;
+}
+#fullCont2 {
+    font-size: 0.8rem;
+    margin-top: 7%;
+    color: white;
+    flex-wrap: wrap;
+}
+.fullListPicturesLinks{
+    margin-top: 9%;
+}
+
+.fullLinksContent {
+    font-size: 0.7rem;
+    text-decoration: none;
+    color: white;
+}
+
+#fullCont1A{
+    font-size: 1.5rem;
+    font-weight: 900;
+    margin-top: 1%;
+    color: black;
+    position: absolute;
+    flex-wrap: wrap;
+}
+#fullCont2A{
+    font-size: 0.8rem;
+    font-weight: 900;
+    margin-top: 7%;
+    color: black;
+    position: absolute;
+    flex-wrap: wrap;
+}
+
+.fullLinksContentA{
+font-size: 0.7rem;
+    text-decoration: none;
+    color: black;
+    font-weight: 900;
+}
+
+.fullarrow {
+    color: #44d62c;
+    font-weight:900;
+    font-size: 0.8rem;  
+}
+.fullarrowA {
+    color: black;
+    font-weight:900;
+    font-size: 0.8rem;  
+}
+
+
+.fullLinksContent:hover{
+    text-decoration: underline;
+}
+.fullLinksContentA:hover{
+        text-decoration: underline;
+
+}
+.fullarrow:hover{
+    text-decoration: none;
+}
+
 
 /* PICTURES LIST */
 
@@ -447,7 +788,7 @@ li {
  
     }
 
-    #chair {
+    #ces {
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
@@ -458,7 +799,7 @@ li {
     
     
     }
-    #chairImage {
+    #listImage {
         display: flex;    
         flex-wrap: wrap;
         width: 100%;
@@ -466,37 +807,60 @@ li {
     /* content */
     
     .content{
+        width: fit-content;
+        height: fit-content;
         display: flex;
         box-sizing: border-box;
-        justify-content: center;
         position: relative;
       
     }
     
-    #razen{
+    #cont1{
         color: white;
         position: absolute;
-        margin-top: 5%;
-        font-size: 2.5rem;
+        font-size: 1.7rem;
     }
     
-    #play{
+    #cont2{
         color: white;
         position: absolute;
-        margin-top: 12%;
-        font-size: 1.3rem;
+        font-size: 1rem;
     }
     
+    #cont2A{
+        position: absolute;
+        color: white;
+        font-weight:900;  
+        font-size: 1rem;
+    }
+   
+    .block {
+        display: block;
+        flex-direction: column;
+        color: white;
+        font-weight: 900;
+        font-size: 1.7rem;
+        
+    }
+    .listPicturesLinks {
+        position: absolute;
+        margin-top: 16%;
+        display: flex;
+        flex-direction: row;   
+    }
+    
+    #listPicturesLinksA{
+        position: absolute;
+        margin-top: 24%;
+        display: flex;
+        flex-direction: row;       
+    }
     #laptops{
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
         box-sizing: border-box;
         width:100%;
-    }
-    #laptopsImage {
-        flex-wrap: wrap;
-        width: 100%;
     }
 
     /* ----- 2 -----*/
@@ -505,17 +869,13 @@ li {
         display: block;
         width: 100%;
     }
-    #games {
+    #chair {
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
         box-sizing: border-box;
         width:100%;
         padding-bottom: 5px;
-    }
-    #gamesImage {
-        flex-wrap: wrap;
-        width: 100%;
     }
 
     #keyboard{
@@ -525,10 +885,7 @@ li {
         box-sizing: border-box;
         width:100%;
     }
-    #keyboardImage {
-        flex-wrap: wrap;
-        width: 100%;
-    }
+
 
 
     /* ----- 3 -----*/
@@ -538,7 +895,7 @@ li {
         width: 100%;
     }
 
-    #animes{
+    #five{
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
@@ -546,10 +903,7 @@ li {
         width:100%;
         padding-bottom: 5px;
     }
-    #animesImage {
-        flex-wrap: wrap;
-        width: 100%;
-    }
+
     #cards{
         display: flex;
         justify-content: center;
@@ -557,18 +911,151 @@ li {
         box-sizing: border-box;
         width:100%;
     }
-    #cardsImage {
-        flex-wrap: wrap;
-        width: 100%;
+ 
+
+    /* ----------FOOTER top---------- */
+
+
+    .listTitle{
+        font-size: 10px;
+        color:white;
+        text-decoration:double;
+    }
+
+    li a{
+        font-size: 10px;
     }
 
 
 
 
+    #footerh3{
+    font-size: 10px;
+    color: #44D62C;
 
 
+    }
 
+    /* ----------FOOTER botom---------- */
+
+    /* 
+
+    .botomAtext {
+        margin-top: 8px;
+        font-size: 8px;
+        color: lightgray;
+    }
+
+    .botomContent{
+        margin-top: 8px;
+        color: lightgray;
+        font-size: 8px;
+    }
+
+    #botomAtext1{
+        margin-top: 8px;
+        font-size: 8px;
+        color: white;
+    } */
+
+    #full{
+        display: none;
+    }
+
+    #mediaFooter{
+        display: flex;
+        background-color: black;
+        flex-direction: column;
+        justify-content: center;
+        box-sizing: border-box;
+        width: 100vw;
+        padding: 0;
+        margin: 0;
+
+        
+    }
+    /* SECTION 1 */
+    #mediaSectionF1{
+        box-sizing: border-box;
+        margin-left: 4%;
+        margin-right: 5%;
+        display: flex;
+        flex-direction: column;
+        border-bottom:1px solid lightgray;
+        height: fit-content;
+        
+    }
+
+    #listWraperM #listMedia{
+        box-sizing: border-box;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .listFooterM{
+        display: none;
+    }
+    #CoprightM{
+        padding: 10px;
+    }
+    .listTitleM{
+        color:white ;
+        font-weight: 900;
+    }
+
+    /* SECTION 2 */
+    #mediaSectionF2{
+        box-sizing: border-box;
+        justify-content: center;
+        margin-left: 4%;
+        margin-right: 5%;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        border-bottom:1px solid lightgray;
+        height: fit-content;
+    }
+    #coptightTitle{
+        font-size: 10px;
+        font-weight: 900;
+        color: white;
+    }
+    #CoprightM{
+        display: flex;
+        flex-direction: row;
+    }
+    .botomAtextM {
+        font-size: 13px;
+        color: lightgray;
+        font-weight: 500;
+    }
+
+    #mediaSectionF3{
+        box-sizing: border-box;
+        justify-content: center;
+        margin-left: 4%;
+        margin-right: 5%;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        border-bottom:1px solid lightgray;
+        height: fit-content;
+        margin-bottom: 15px;
+
+    }
+    .listCointainerM{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+
+    }
+
+    .mediaMedia{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+    }
+    
 
 
 }
-
